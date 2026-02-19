@@ -12,8 +12,8 @@
 <header>
     <main>
         <div class="container">
+		<button id="themeToggle">Toggle Dark Mode</button>
             <section class="card">
-		
                 </p>
                 <img src="images/profile.jpg" alt="Profile photo" width="130px" height="190px">
                 <p>
@@ -29,8 +29,11 @@
                     just trying to figure things out, learn along the way, and do my best—one step at a time.
                 </p>
             </section>
+
+		<!-- TASK 5: Show/Hide Skills Button -->
+		<button id="toggleSkills">Show/Hide Skills</button> 
             
-            <section class="card">
+            <section class="card" id="skillsSection"> >
                 <h2>Skills</h2>
                 <ul>
                     <li>HTML</li>
@@ -92,10 +95,10 @@
             <section class="card">
                 <h2>Contact Me</h2>
                 <form>
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="email" placeholder="Email">
                     <textarea placeholder="Message"></textarea>
-                    <button type="submit">Send</button>
+                    <button type="submit" id="submitBtn">Send</button>
                 </form>
             </section>
         </div>
@@ -103,5 +106,9 @@
     <footer>
         <p>&copy; 2026 Sherly Salinas. All rights reserved.</p>
     </footer>
+
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
