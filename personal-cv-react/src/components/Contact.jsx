@@ -10,7 +10,11 @@ export default function Contact() {
     if (name === "" || email === "") {
       alert("Please fill in all required fields.");
     } else {
-      alert("Form submitted successfully!");
+      alert(`Thank you ${name}!`);
+
+      setName("");
+      setEmail("");
+      setMessage("");
     }
   };
 
@@ -21,19 +25,19 @@ export default function Contact() {
         <input
           type="text"
           id="name"
-          placeholder="Name"
+          placeholder="Your Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
           type="email"
           id="email"
-          placeholder="Email"
+          placeholder="Your Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
-          placeholder="Message"
+          placeholder="Message (Optional)"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
